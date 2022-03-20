@@ -1,0 +1,21 @@
+<div class="result-header">
+<h2>Results for {{search}}</h2>
+</div>
+
+<div class="artists-search-result">
+	{{#if results.length}}
+		{{#each results}}
+			{{> artistpartial this}}
+		{{/each}}
+	{{else}}
+		<div class="fail-result-container">
+ 			<div class="fail-result">
+				<p>Sorry, no results... 🤔 Try again</p>
+				{{> searchbox}}
+			</div>
+		</div>
+	{{/if}}
+</div>
+
+
+

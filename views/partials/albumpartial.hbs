@@ -1,0 +1,13 @@
+<div class="album-card">
+  {{#if artwork.0.url}}
+    <img src="{{artwork.0.url}}" alt="{{name}}" />
+  {{else}}
+    <img src="images/default-image.png" alt="{{name}}" />
+  {{/if}}
+    <p>{{name}}</p>
+    <div class="albums-btn">
+      <a href="/album/{{id}}?img={{artwork.0.url}}">
+        view tracks
+      </a>
+  </div>
+</div>

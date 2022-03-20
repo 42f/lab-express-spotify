@@ -1,0 +1,12 @@
+<div class="album-header">
+  {{#if artwork}}
+    <img src="{{artwork}}" alt="{{name}}" />
+  {{else}}
+    <img src="../images/default-image.png" alt="{{name}}" />
+  {{/if}}
+</div>
+<div class="album-tracks-container">
+{{#each results}}
+    {{> trackpartial this}}
+{{/each}}
+</div>

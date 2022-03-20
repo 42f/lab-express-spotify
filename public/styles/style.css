@@ -1,0 +1,198 @@
+body {
+  padding: 0;
+  margin: 0;
+	box-sizing: content-box;
+	font-family: sans-serif;
+	background-color: blanchedalmond;
+}
+
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
+    url("../images/spotify-background.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.home form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.home button {
+  border-radius: 25px;
+  background: rgb(105, 220, 114);
+  color: white;
+  border: none;
+  font-size: 1.5rem;
+  padding: 20px;
+}
+
+.home input {
+  margin: 0 0 70px 0;
+  font-size: 2rem;
+  color: rgb(55, 114, 60);
+  border: none;
+}
+
+.home input:focus {
+  border: none;
+}
+
+/* search result */
+
+.result-header {
+	height: 200px;
+	display: flex;
+
+	justify-content: center;
+	align-items: center;
+}
+
+.result-header h2 {
+  text-align: center;
+	font-size: 2.5rem;
+
+}
+
+/* artist card */
+
+.artists-search-result {
+	margin: 0 25px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+	gap: 20px;
+	row-gap: 50px;
+}
+
+.artist-card {
+	position: relative;
+	flex: 1 0 30vw;
+}
+
+.artist-card img {
+	border-radius: 15px;
+	width: 100%;
+}
+
+.artist-card-banner {
+	position:absolute;
+	border-radius: 15px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	bottom: 0px;
+	height: 100px;
+	width: 100%;
+	padding-bottom: 10px;
+	background-color:  rgb(105, 220, 114);
+}
+
+.artist-card-banner p {
+	text-align: center;
+}
+
+.albums-btn {
+	text-align: center;
+	padding: 10px 20px;
+	background-color:  black;
+	border-radius: 15px;
+	color: white;
+}
+
+.albums-btn a {
+	text-decoration: none;
+	color: inherit;
+}
+
+/* failed result */
+
+.fail-result-container {
+	width: 100%;
+}
+
+.fail-result {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+/* albums results */
+
+.albums-search-result {
+	margin: 50px 10%;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+
+}
+
+.album-card {
+	border-radius: 15px;
+	background-color:  rgb(105, 220, 114);
+	margin: 10px 0;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.album-card img{
+	width: 200px;
+	border-radius: 15px;
+}
+
+.album-card p, .albums-btn{
+	display: flex;
+	align-items: center;
+}
+
+.album-card p {
+	font-size: 2vw;
+}
+
+/* album page */
+
+.album-header img{
+	position: fixed;
+	margin: 30px 0 0 15px;
+	width: 200px;
+}
+
+.album-tracks-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.track-card {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 50%;
+	border-radius: 15px;
+	background-color: rgb(241, 243, 244);
+	margin: 10px 0;
+	width: 60%;
+}
+
+.album-card img{
+	width: 200px;
+	border-radius: 15px;
+}
+
+.track-card p {
+	margin-left: 20px;
+	display: flex;
+	align-items: center;
+}
